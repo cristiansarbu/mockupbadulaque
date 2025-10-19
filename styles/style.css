@@ -10,38 +10,17 @@ header {
   width: 25%;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
-  position: absolute;
-  right: 0;
-  background-color: var(--color-gris-pills);
-  min-width: 100vw;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  text-align: right;
-  border-bottom: 1px solid black;
-  padding-right: 1rem;
-}
-
-.dropdown-content a:nth-of-type(3) {
-  border-bottom: 0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: space-around;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid black;
-  border-radius: 20px;
+  background-color: var(--color-fondo-verde);
+  min-width: 100vw;
+}
+
+.dropdown-content.toggle {
+  display: flex;
 }
 
 nav {
