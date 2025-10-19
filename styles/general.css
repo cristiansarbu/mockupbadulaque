@@ -1,0 +1,17 @@
+:root {
+  --color-azul-titulo: #486284;
+  --color-azul-claro-texto: #8ca2c0;
+  --color-fondo-verde: #a3c9a8;
+  /* --color-negro-texto se usa tanto en el footer como para
+  el texto negro del menu */
+  --color-negro-texto: #404040;
+  --color-gris-avisos-footer: #686868;
+
+  /* Colores para los botones de navegación del menú */
+  --color-gris-pills: #d9d9d9;
+  --color-gris-pills-activada: #a7a7a7;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
