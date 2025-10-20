@@ -11,16 +11,34 @@ header {
 }
 
 .dropdown-content {
-  display: none;
+  margin-top: -1px;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
+  opacity: 0;
+  padding: 0;
+
   justify-content: space-around;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background-color: var(--color-fondo-verde);
   min-width: 100vw;
 }
 
+.dropdown-content a {
+  transition: opacity 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+}
+
 .dropdown-content.toggle {
   display: flex;
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dropdown-content.toggle a {
+  opacity: 1;
 }
 
 nav {
