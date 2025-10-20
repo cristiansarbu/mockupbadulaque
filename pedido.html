@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pedidos.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pedidos | Badulaque Kebab</title>
+</head>
+<body>
+    <header>
+        <img src="img/landing/logo.svg" class="header-logo">
+        <button class="drop-btn">
+            <img src="img/landing/desplegable.svg">
+    </header>
+
+    <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Carta</a>
+        <a href="#">Pedido</a>
+    </div>
+
+    
+    <div class="pedido-items-container">
+        <!-- Sección pedidos -->
+        <section class="pedido">
+            <h2>Tu pedido</h2>
+
+            <div class="pedido-item">
+                <img src="img/pedido/menu-durum.png" alt="">
+                <div class="pedido-item-content">
+                    <div class="pedido-item-content-info">
+                        <h3>1x Menú Durum</h3>
+                        <span>8.00€</span>
+                    </div>
+                    <div class="pedido-item-content-other">
+                        <img src="img/pedido/icono-menos.svg" alt="">
+                        <img src="img/pedido/boton-anadir.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pedido-item">
+                <img src="img/pedido/patas-deluxe.png" alt="">
+                <div class="pedido-item-content">
+                    <div class="pedido-item-content-info">
+                        <h3>1x Patatas Deluxe</h3>
+                        <span>2,50€</span>
+                    </div>
+                    <div class="pedido-item-content-other">
+                        <img src="img/pedido/icono-menos.svg" alt="">
+                        <img src="img/pedido/boton-anadir.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pedido-item">
+                <img src="img/pedido/pedrata.png" alt="">
+                <div class="pedido-item-content">
+                    <div class="pedido-item-content-info">
+                        <h3>1x Pedrata Grande</h3>
+                        <span>9.00€</span>
+                    </div>
+                    <div class="pedido-item-content-other">
+                        <img src="img/pedido/icono-menos.svg" alt="">
+                        <img src="img/pedido/boton-anadir.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion recogida     -->
+        <section class="recogida">
+            <h2>Detalles de la recogida</h2>
+            <div class="mapa">
+                <img src="img/pedido/ubi.png" alt="Mapa de ubicación">
+            </div>
+            <div class="direccion-info">
+                <img src="img/pedido/icono-ubicacion.svg" alt="Ubicación">
+                <div class="direccion-texto">
+                    <span>Av. de la Paz, 12, 26004</span>
+                    <span>Logroño, La Rioja</span>
+                </div>
+            </div>
+            <div class="tiempo-estimado">
+                <span>Tiempo estimado: 10-20 min</span>
+            </div>
+        </section>
+
+        <!-- Sección pago -->
+        <section class="pago">
+            <h2>Método de pago</h2>
+            <div class="anadir-pago">
+                <img src="img/pedido/boton-anadir.svg" alt="Añadir pago">
+                <span>Añadir forma de pago</span>
+            </div>
+        </section>
+
+        <button class="confirmar-btn">Confirmar</button>
+    </div>
+
+    <script src="js/pedidos.js"></script>
+</body>
+</html>
