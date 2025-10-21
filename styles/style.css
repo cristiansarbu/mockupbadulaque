@@ -6,6 +6,10 @@ header {
   padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
+body {
+  font-size: 14px;
+}
+
 .header-logo {
   width: 25%;
 }
