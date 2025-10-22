@@ -1,212 +1,312 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-fondo-verde);
-  padding: 1rem 1.5rem 1rem 1.5rem;
-}
-
-.header-logo {
-  width: 25%;
-}
-
-.dropdown-content {
-  display: none;
-  justify-content: space-around;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: var(--color-fondo-verde);
-  min-width: 100vw;
-}
-
-.dropdown-content.toggle {
-  display: flex;
-}
-
 .pedido-items-container {
-    width: 90%;
-    max-width: 400px;
-    padding: 25px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+  width: 90%;
+  max-width: 400px;
+  padding: 25px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .pedido h2 {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--color-azul-titulo);
-    margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-azul-titulo);
+  margin-bottom: 20px;
+}
+
+.pedido-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .pedido-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.pedido-item-content {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.pedido-item-content-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.pedido-item-content-info h3 {
-    font-size: 1,5rem;
-    font-weight: 500;
-    color: var(--color-azul-claro-texto);
-}
-
-.pedido-item-content-info span {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-azul-claro-texto);
-}
-
-.pedido-item-content-other {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.pedido-item-content-other {
   display: flex;
-  align-items: center;
-  gap: 6px;
-  border-radius: 12px;
-  padding: 5px 8px;
+  background-color: #ffffff;
+  border-radius: 20px 12px 12px 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 120px;
 }
 
-.pedido-item-content-other img {
-    width: 24px;
-    height: 24px;
-
+.pedido-item-image {
+  width: 35%;
+  flex-shrink: 0;
 }
 
-.recogida{
-    margin-top: 30px;
+.pedido-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
-.recogida h2{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--color-azul-titulo);
-    margin-bottom: 20px;
+.pedido-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+}
+
+.pedido-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pedido-item-info h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-azul-claro-texto);
+}
+
+.pedido-item-info span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-azul-claro-texto);
+}
+
+.pedido-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.pedido-item-actions img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.recogida {
+  margin-top: 30px;
+}
+
+.recogida h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-azul-titulo);
+  margin-bottom: 20px;
 }
 
 .recogida .mapa img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
 .direccion-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .direccion-info img {
-    /* Icono de ubicación */
-    width: 20px;
-    height: 20px;
-    opacity: 0.6;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
 }
 
 .direccion-texto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .direccion-texto span {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.4;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
 }
 
 .direccion-texto span:first-child {
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: var(--color-azul-claro-texto);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-azul-claro-texto);
 }
 
-.direccion-texto span{
-    color: var(--color-azul-claro-texto);
-     font-size: 1.25rem;
-     font-weight: 500;
+.direccion-texto span {
+  color: var(--color-azul-claro-texto);
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .tiempo-estimado {
-    text-align: center; 
+  text-align: center;
 }
 
 .tiempo-estimado span {
-    display: inline-block;
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    width: 100%;
-    color: var(--color-azul-claro-texto);
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  color: var(--color-azul-claro-texto);
 }
 
-
-.pago{
-    margin-top: 30px;
+.pago {
+  margin-top: 30px;
 }
 
-.pago h2{
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--color-azul-titulo);
-    margin-bottom: 20px;
+.pago h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-azul-titulo);
+  margin-bottom: 20px;
 }
 
 .anadir-pago {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .anadir-pago img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .anadir-pago span {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--color-azul-claro-texto);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-azul-claro-texto);
 }
 
-
 .confirmar-btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 30px;
+  background-color: rgba(210, 210, 210, 0.25);
+  color: var(--color-azul-claro-texto);
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "DM Sans", "Roboto", sans-serif;
+  cursor: not-allowed;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .pedido-items-container {
+    flex-direction: column;
+    max-width: 1100px;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  .pedido-items-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .pedido-item {
+    flex: 1;
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+  }
+
+  .pedido-item-details {
+    padding: 1rem 1.2rem;
+  }
+
+  .checkout-details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 40px;
+  }
+
+  .recogida {
+    flex: 1;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recogida-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .recogida .mapa {
+    flex-basis: 45%;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1; /* Esto lo fuerza a ser un cuadrado */
+  }
+
+  .recogida .mapa img {
     width: 100%;
-    padding: 16px;
-    margin-top: 30px;
-    background-color: rgba(210, 210, 210, 0.25);
-    color: var(--color-azul-claro-texto);
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "DM Sans", "Roboto", sans-serif;
-    cursor: not-allowed;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0;
+  }
+
+  .direccion-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+
+  .direccion-info img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+  }
+
+  .direccion-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .direccion-texto span {
+    color: var(--color-azul-claro-texto);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .direccion-texto span:first-child {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--color-azul-claro-texto);
+  }
+
+  .pago-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pago {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .confirmar-btn {
+    margin-top: auto;
+    align-self: flex-end;
+    width: auto;
+    padding: 16px 32px;
+  }
 }
