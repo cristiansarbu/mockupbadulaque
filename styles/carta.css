@@ -1,0 +1,141 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.nav-extra-item {
+  display: none;
+}
+
+nav a {
+  background-color: var(--color-gris-pills);
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border-radius: 50px;
+}
+
+nav a:first-of-type {
+  background-color: var(--color-gris-pills-activada);
+}
+
+.menu-items-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  border: 1px solid #b9b9b9;
+  border-radius: 20px;
+}
+
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-item-content-text {
+  height: 100%;
+  padding-top: 0.75rem;
+}
+
+.menu-item-content-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.menu-item-content-text p {
+  color: var(--color-azul-claro-texto);
+}
+
+.menu-item-content-other {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 0.5rem;
+  padding-top: 0.75rem;
+  gap: 2.5rem;
+}
+
+.menu-item-content-other img {
+  width: 40%;
+}
+
+.menu-item-content-other p {
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 20px;
+  background-color: #f3f1f1;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .menu-item {
+    max-width: 33rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+    max-width: 40rem;
+  }
+
+  .item-1 {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-item {
+    max-width: 60rem;
+    min-width: 60rem;
+  }
+
+  .menu-item-content {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .item-2,
+  .item-3 {
+    display: inline;
+  }
+
+  .flech-izq,
+  .flech-der {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-height: 100vh;
+  }
+
+  nav {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .menu-items-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  .menu-item {
+    max-width: 25rem;
+    min-width: 0;
+  }
+}
