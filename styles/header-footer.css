@@ -1,0 +1,194 @@
+/* Header  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-fondo-verde);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  max-height: 7rem;
+}
+
+.header-logo {
+  width: 25%;
+  max-width: 5rem;
+}
+
+.header-title {
+  color: var(--color-azul-titulo);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.dropdown-content {
+  margin-top: -1px;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
+  opacity: 0;
+  padding: 0;
+
+  justify-content: space-around;
+  background-color: #b9d6bb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 100vw;
+}
+
+.dropdown-content a {
+  transition: opacity 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+}
+
+.dropdown-content.toggle {
+  display: flex;
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dropdown-content.toggle a {
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-fondo-verde);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-negro-texto);
+  margin-top: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+  max-height: 48rem;
+}
+
+footer h4 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contacto > :nth-child(1) {
+  color: var(--color-azul-titulo);
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.horario > :nth-child(1) {
+  color: var(--color-azul-titulo);
+}
+
+.iframe-maps-footer {
+  display: none;
+}
+
+.direccion-2 {
+  margin-bottom: 1rem;
+}
+
+.telefono {
+  margin-bottom: 1rem;
+}
+
+.email {
+  margin-bottom: 1.5rem;
+}
+
+.horario-dias {
+  margin-bottom: 1rem;
+}
+
+.horario-horas {
+  margin-bottom: 4rem;
+}
+
+.avisos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+  color: var(--color-gris-avisos-footer);
+}
+
+/* Media Queries para Header y Footer */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  .header-title {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  
+  header {
+    padding: 1rem 4rem 1rem 4rem;
+  }
+
+  .iframe-maps-footer {
+    display: block;
+  }
+
+  .contacto {
+    margin-bottom: 0;
+  }
+
+  .contacto > :nth-child(2) {
+    margin-top: 0.5rem;
+  }
+
+  .horario > :nth-child(2) {
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 1rem;
+    max-height: 32rem;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
+  }
+
+  .email {
+    margin-bottom: 0;
+  }
+
+  .avisos {
+    padding: 0;
+  }
+}
