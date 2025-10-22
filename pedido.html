@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/pedidos.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,9 +15,11 @@
         rel="stylesheet">
     <title>Pedidos | Badulaque Kebab</title>
 </head>
+
 <body>
     <header>
         <img src="img/landing/logo.svg" class="header-logo">
+        <h3 class="header-title">Badulaque Kebab</h3>
         <button class="drop-btn">
             <img src="img/landing/desplegable.svg">
     </header>
@@ -26,85 +30,128 @@
         <a href="#">Pedido</a>
     </div>
 
-    
+
     <div class="pedido-items-container">
-        <!-- Sección pedidos -->
         <section class="pedido">
             <h2>Tu pedido</h2>
 
-            <div class="pedido-item">
-                <img src="img/pedido/menu-durum.png" alt="">
-                <div class="pedido-item-content">
-                    <div class="pedido-item-content-info">
-                        <h3>1x Menú Durum</h3>
-                        <span>8.00€</span>
-                    </div>
-                    <div class="pedido-item-content-other">
-                        <img src="img/pedido/icono-menos.svg" alt="">
-                        <img src="img/pedido/boton-anadir.svg" alt="">
-                    </div>
-                </div>
-            </div>
+            <div class="pedido-items-grid">
 
-            <div class="pedido-item">
-                <img src="img/pedido/patas-deluxe.png" alt="">
-                <div class="pedido-item-content">
-                    <div class="pedido-item-content-info">
-                        <h3>1x Patatas Deluxe</h3>
-                        <span>2,50€</span>
+                <div class="pedido-item">
+                    <div class="pedido-item-image">
+                        <img src="img/pedido/menu-durum.png" alt="Menú Durum">
                     </div>
-                    <div class="pedido-item-content-other">
-                        <img src="img/pedido/icono-menos.svg" alt="">
-                        <img src="img/pedido/boton-anadir.svg" alt="">
+                    <div class="pedido-item-details">
+                        <div class="pedido-item-info">
+                            <h3>1x Menú Durum</h3>
+                            <span>€8,00</span>
+                        </div>
+                        <div class="pedido-item-actions">
+                            <img src="img/pedido/icono-menos.svg" alt="Restar">
+                            <img src="img/pedido/boton-anadir.svg" alt="Añadir">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pedido-item">
-                <img src="img/pedido/pedrata.png" alt="">
-                <div class="pedido-item-content">
-                    <div class="pedido-item-content-info">
-                        <h3>1x Pedrata Grande</h3>
-                        <span>9.00€</span>
+                <div class="pedido-item">
+                    <div class="pedido-item-image">
+                        <img src="img/pedido/patas-deluxe.png" alt="Patatas Deluxe">
                     </div>
-                    <div class="pedido-item-content-other">
-                        <img src="img/pedido/icono-menos.svg" alt="">
-                        <img src="img/pedido/boton-anadir.svg" alt="">
+                    <div class="pedido-item-details">
+                        <div class="pedido-item-info">
+                            <h3>1x Patatas Deluxe</h3>
+                            <span>€2,50</span>
+                        </div>
+                        <div class="pedido-item-actions">
+                            <img src="img/pedido/icono-menos.svg" alt="Restar">
+                            <img src="img/pedido/boton-anadir.svg" alt="Añadir">
+                        </div>
                     </div>
                 </div>
+
+                <div class="pedido-item">
+                    <div class="pedido-item-image">
+                        <img src="img/pedido/pedrata.png" alt="Pedrata Grande">
+                    </div>
+                    <div class="pedido-item-details">
+                        <div class="pedido-item-info">
+                            <h3>1x Pedrata Grande</h3>
+                            <span>€9,00</span>
+                        </div>
+                        <div class="pedido-item-actions">
+                            <img src="img/pedido/icono-menos.svg" alt="Restar">
+                            <img src="img/pedido/boton-anadir.svg" alt="Añadir">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Seccion recogida     -->
-        <section class="recogida">
-            <h2>Detalles de la recogida</h2>
-            <div class="mapa">
-                <img src="img/pedido/ubi.png" alt="Mapa de ubicación">
-            </div>
-            <div class="direccion-info">
-                <img src="img/pedido/icono-ubicacion.svg" alt="Ubicación">
-                <div class="direccion-texto">
-                    <span>Av. de la Paz, 12, 26004</span>
-                    <span>Logroño, La Rioja</span>
+        <div class="checkout-details">
+
+            <section class="recogida">
+                <h2>Detalles de la recogida</h2>
+
+                <div class="recogida-content">
+                    <div class="mapa">
+                        <img src="img/pedido/ubi.png" alt="Mapa de ubicación">
+                    </div>
+                    <div class="direccion-info">
+                        <img src="img/pedido/icono-ubicacion.svg" alt="Ubicación">
+                        <div class="direccion-texto">
+                            <span>Av. de la Paz, 12, 26004</span>
+                            <span>Logroño, La Rioja</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="tiempo-estimado">
-                <span>Tiempo estimado: 10-20 min</span>
-            </div>
-        </section>
+                <div class="tiempo-estimado">
+                    <span>Tiempo estimado: 10-20 min</span>
+                </div>
+            </section>
 
-        <!-- Sección pago -->
-        <section class="pago">
-            <h2>Método de pago</h2>
-            <div class="anadir-pago">
-                <img src="img/pedido/boton-anadir.svg" alt="Añadir pago">
-                <span>Añadir forma de pago</span>
-            </div>
-        </section>
+            <div class="pago-container">
 
-        <button class="confirmar-btn">Confirmar</button>
+                <section class="pago">
+                    <h2>Método de pago</h2>
+                    <div class="anadir-pago">
+                        <img src="img/pedido/boton-anadir.svg" alt="Añadir pago">
+                        <span>Añadir forma de pago</span>
+                    </div>
+                </section>
+
+                <button class="confirmar-btn">Confirmar</button>
+            </div>
+
+        </div>
+
     </div>
+
+    <footer>
+        <div class="contacto">
+            <h4>Contacto</h4>
+            <p class="direccion-1">Av. de la Paz, 12, 26004</p>
+            <p class="direccion-2">Logroño, La Rioja</p>
+            <p class="telefono">658 31 13 22</p>
+            <p class="email">contacto@badulaquelogrono.com</p>
+        </div>
+        <div class="horario">
+            <h4>Horario</h4>
+            <p class="horario-dias">Lunes a Domingo</p>
+            <p class="horario-horas">13:00 a 00:00</p>
+            <div class="avisos">
+                <a href="#">Aviso legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+        <div class="iframe-maps-footer">
+            <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Avenida%20de%20la%20Paz,%2012+(Badulaque%20Kebab)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+    </footer>
 
     <script src="js/pedidos.js"></script>
 </body>
+
 </html>
